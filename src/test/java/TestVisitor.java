@@ -29,12 +29,12 @@ public class TestVisitor {
 
     @Test
     public void canGetFunds() {
-        assertEquals(40.00, visitor.getFunds());
+        assertEquals(40.00, visitor.getFunds(), 0.01);
     }
 
     @Test
     public void candeductFunds() {
         visitor.deductFunds(9);
-        assertEquals(31.00, visitor.getFunds());
+        assertEquals(31.00, visitor.getFunds(), 0.01);
     }
 }
